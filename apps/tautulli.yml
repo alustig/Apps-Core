@@ -42,9 +42,9 @@
       set_fact:
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
-          - '/opt/appdata/{{pgrole}}:/config'
-          - '/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Logs:/logs'
-          - '/opt/appdata/{{pgrole}}/scripts:/scripts'
+          - '/tank/appdata/{{pgrole}}:/config'
+          - '/tank/appdata/plex/database/Library/Application Support/Plex Media Server/Logs:/logs'
+          - '/tank/appdata/{{pgrole}}/scripts:/scripts'
 
     - name: 'Setting PG ENV'
       set_fact:
